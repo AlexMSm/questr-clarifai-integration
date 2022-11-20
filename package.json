@@ -9,5 +9,6 @@
   "scripts": {
     "seed": "node ./db/seeds/run-seed.js",
     "start": "node listen.js"
-  }
+  },
+  "type": "module"
 }
