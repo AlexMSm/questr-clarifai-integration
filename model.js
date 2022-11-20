@@ -1,5 +1,3 @@
-const fetch = require("node-fetch");
-
 exports.fetchImagePrediction = (URL) => {
   let USER_ID = "alexmsmith";
   let PAT = "44e576875aeb4838bfb766db8dc9dd3c";

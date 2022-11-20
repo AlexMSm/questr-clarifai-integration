@@ -6,5 +6,4 @@ const express = require("express");
 app.listen(PORT, (err) => {
   if (err) throw err;
   console.log(`Listening on ${PORT}...`);
-  }
-);
+});
