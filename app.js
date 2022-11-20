@@ -10,7 +10,7 @@ const router = require("./router");
 app.use("/api", router);
 
 app.all("/*", (req, res) => {
-  res.status(404).send({ message: "Bad patash" });
+  res.status(404).send({ message: "Bad path" });
 });
 
 module.exports = app;
