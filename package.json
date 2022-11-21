@@ -6,6 +6,7 @@
     "node-fetch": "^3.3.0",
     "y": "^0.3.2"
   },
+  "main": "listen.js",
   "scripts": {
     "seed": "node ./db/seeds/run-seed.js",
     "start": "node listen.js"
