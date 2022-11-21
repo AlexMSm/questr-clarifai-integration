@@ -1,4 +1,4 @@
-const fetch = request("node-fetch");
+const fetch = require("node-fetch");
 
 exports.fetchImagePrediction = (URL) => {
   let USER_ID = "alexmsmith";
