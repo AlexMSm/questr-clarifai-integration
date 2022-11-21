@@ -40,8 +40,6 @@ exports.fetchImagePrediction = (URL) => {
       "/outputs"
   ); */
 
-  console.log("URL TO POST", URL);
-
   let predictions = fetch(
     "https://api.clarifai.com/v2/users/" +
       USER_ID +
@@ -59,8 +57,6 @@ exports.fetchImagePrediction = (URL) => {
 
       let predictions = result.outputs[0].data.concepts;
 
-      console.log("PREDICTING");
-      console.log(predictions);
       //console.log("In model", predictions);
       //console.log(predictions);
       /*       predictions.forEach((i) => {
@@ -122,7 +118,6 @@ exports.fetchRPSPrediction = (URL) => {
     .then((result) => {
       result = JSON.parse(result);
       let predictions = result.outputs[0].data.concepts;
-      console.log("In model", predictions);
 
       return predictions;
     })
