@@ -116,9 +116,9 @@ exports.fetchRPSPrediction = (URL) => {
   )
     .then((response) => response.text())
     .then((result) => {
-      console.log(result);
       result = JSON.parse(result);
       let predictions = result.outputs[0].data.concepts;
+      console.log(predictions);
 
       return predictions;
     })
